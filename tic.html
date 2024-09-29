@@ -4,36 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Museum Ticket Booking</title>
-    <link rel="stylesheet" href="styletic.css">
+    <link rel="stylesheet" href="tic.css">
     <link rel="shortcut icon" href="museum (2).png" type="image/x-icon">
 </head>
-<body>
-    <div class="container">
+<body >
+    <div class="particles-js"></div>
+    <div class="container" >
         <h1>Museum Ticket Booking</h1>
-        <form id="ticketForm">
-
-            <label for="name">Full Name:</label>
-            <input type="text" id="name" required>
-
-            <label for="email">Email:</label>
-
-            <input type="email" id="email" required>
-
-            <label for="ticketCount">Number of Tickets:</label>
-            <input type="number" id="ticketCount"
+        <form  action="https://formspree.io/f/xwpegqno"
+        method="POST"
+        enctype="multipart/form-data" id="ticketForm">
             
-             min="1" max="10" required>
+    <!-- <form  id="ticketForm"> -->
+
+            <label for="name" >Full Name:</label>
+            <input type="text" id="name" name="name"  required>
+
+            <label for="email"  name="email">Email:</label>
+
+            <input type="email" id="email" name="email" required>
+
+            <label for="ticketCount" >Number of Tickets:</label>
+            <input type="number" id="ticketCount" name="ticketCount"
+            
+             min="1" max="10"required>
 
 
-            <label for="date">Visit Date:</label>
-            <input type="date" id="date" required>
+            <label for="date" >Visit Date:</label>
+            <input type="date" id="date" name="date"required>
 
-            <button type="submit" id="sub">Book Ticket</button>
+            <a href="success.html"><button type="submit" id="sub" >Book Ticket</button></a>
         </form>
         <div id="thankYouMessage" class="hidden">Thank you for booking! A confirmation email has been sent.</div>
     </div>
-
-    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2.6.4/dist/email.min.js"></script>
-    <script src="scriptic.js"></script>
+   
+   
+    
+ 
+    
+   
 </body>
+<script src="tic.js"></script> 
 </html>
