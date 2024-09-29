@@ -100,6 +100,9 @@ nav ul li a:hover {
 }
 
 @media (max-width: 768px) {
+    body{
+        overflow-x:hidden;
+    }
     header {
         flex-direction: column;
         align-items: center;
@@ -367,6 +370,9 @@ footer {
 
 /* Responsive Design */
 @media (max-width: 768px) {
+      body{
+        overflow-x:hidden;
+    }
     .hero h2 {
         font-size: 2.5em;
     }
@@ -383,6 +389,9 @@ footer {
 }
 
 @media (max-width: 480px) {
+    body{
+        overflow-x:hidden;
+    }
     nav ul li {
         display: block;
         margin: 10px 0;
